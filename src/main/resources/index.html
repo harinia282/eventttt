@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - College Events & Workshops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container navbar">
+        <h1><i class="fa-solid fa-calendar-days"></i> CampusConnect</h1>
+        <nav>
+            <a href="#eventsGrid">Events</a>
+            <a href="#eventsGrid">Workshops</a>
+            <a href="#eventsGrid">Seminars</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content">
+        <h2>Discover What's Happening on Campus</h2>
+        <p>Stay updated with the latest college events, technical workshops, and inspiring seminars.</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search events, workshops, locations...">
+            <button id="searchBtn"><i class="fa-solid fa-search"></i> Search</button>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="event">Events</button>
+        <button class="tab-btn" data-filter="workshop">Workshops</button>
+        <button class="tab-btn" data-filter="seminar">Seminars</button>
+    </div>
+
+    <!-- Events Grid -->
+    <div class="events-grid" id="eventsGrid">
+        <!-- Dynamically populated by script.js -->
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container footer-content">
+        <p>&copy; 2026 CampusConnect College Event Management. All rights reserved.</p>
+        <p>Designed for Students & Faculty</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
